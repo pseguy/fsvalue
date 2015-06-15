@@ -1,4 +1,5 @@
 fsvalue: A simple tool to restore hard-link files in a sub-tree.
+ 		 Read more in fsvalue.adoc.
 
  Copyright 2015 Pascal Séguy	<pascal.seguy@laposte.net>
 
@@ -14,6 +15,13 @@ fsvalue: A simple tool to restore hard-link files in a sub-tree.
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Prerequisite
+------------
+Run dpkg-checkbuilddeps to see the list of needed dependencies.
+At least: libboost-system-dev, libboost-filesystem-dev, libcrypto++-dev,
+ libicu-dev, asciidoc, libhtml-template-perl.
 
 
 Build
