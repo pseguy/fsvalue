@@ -1,0 +1,4 @@
+:prj:		{sys:tools/getdpkgversion.pl -s}
+:firstpkg:	{sys:tools/getdpkgversion.pl -p}
+:changelogfile:	{eval:os.path.exists("{prj}-changelog.html")}
+:todofile:	{eval:os.path.exists("{prj}-TODO.html")}

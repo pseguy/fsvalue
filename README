@@ -1,0 +1,27 @@
+fsvalue: A simple tool to restore hard-link files in a sub-tree.
+
+ Copyright 2015 Pascal Séguy	<pascal.seguy@laposte.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Build
+-----
+
+This tool was developped and packaged for Ubuntu/Debian Linux.
+This is a makefile based project. Simply run:
+
+	make
+	make install
+

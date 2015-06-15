@@ -1,0 +1,18 @@
+Source: fsvalue
+Section: unknown
+Priority: optional
+Maintainer: Pascal Séguy <pascal.seguy@laposte.net>
+Build-Depends: debhelper (>= 8.0.0), libboost-system-dev, libboost-filesystem-dev, libcrypto++-dev
+	, libicu-dev
+	, asciidoc, libhtml-template-perl
+Standards-Version: 3.9.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/fsvalue.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/fsvalue.git;a=summary
+
+Package: fsvalue
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A simple tool to restore hard-link files in a sub-tree.
+ This tool analyse a directory and suggest you hard-links 
+ that could be done on some files.

@@ -1,0 +1,61 @@
+= fsvalue(1) =
+:Author:    Pascal Séguy
+:Email:     pascal.seguy@laposte.net
+:Date:      {localdate}
+:Revision:  {sys: . ./VERSION; echo $VERSION_MAJ.$VERSION_MIN.$VERSION_REV}
+:Key words:
+
+
+NAME
+----
+fsvalue - A simple tool to restore hard-link files in a sub-tree.
+
+
+SYNOPSIS
+--------
+
+----------------------------------------------------------
+include::usage.txt[]
+----------------------------------------------------------
+
+== ARGUMENTS ==
+
+
+-d::
+	Debug. Display files name while scanning.
+
+-e::
+	Execute, effectively make hard-links (Default is dry-run).
+
+-i::
+	Interactive. Ask the user for each hard-linkable files.
+
+-m size::
+	While comparing files, limit file size to first 'size' KiB.
+	This can accelerate a lot on large files such as music and video files.
+
+-v::
+	Verbose.
+
+dir::
+	The directory to scan, default is the current.
+
+== DESCRIPTION ==
+
+This tool analyzes a sub-tree and suggest you a list of files that could be hard-linked.
+
+Hard-links can save space on a file-system. 
+It sometimes happens that copies of the same files exists under different name in 
+different directory of a user subtree, often multimedia files.
+Hard-links are also often lost after a network copy of a sub-tree.
+
+The default behavior is a dry-run and just output a list of `ln` commands that could be issued, 
+and can be used safely.
+
+
+SEE ALSO
+--------
+ln(1).
+
+
+include::mantailcmn.adoc[]

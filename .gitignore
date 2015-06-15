@@ -1,0 +1,12 @@
+core
+fsvalue
+*.depend
+*.o
+*~
+sysconfig.h
+test.d
+fsvalue-TODO.html
+fsvalue-changelog.html
+fsvalue.1
+fsvalue.html
+usage.txt
